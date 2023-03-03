@@ -214,7 +214,7 @@ function ScreenCapture() {
                   textAlign: 'right',
                 }}
               >
-                3 mint ago
+                 minutes ago
               </Text>
             </FlexItem>
           </Flex>
