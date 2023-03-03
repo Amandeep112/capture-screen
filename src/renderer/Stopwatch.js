@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Container, Flex, FlexItem, Section, Switch, Text } from 'components';
 import React, { useState, useRef, useEffect } from 'react';
 
@@ -14,7 +15,8 @@ function Stopwatch({ startCapture }) {
   const [expireStoreTime, setExpireStoreTime] = useState(fixedTime);
 
   const [isToggled, setIsToggled] = useState(false);
-
+const getDate=new Date()
+console.info(getDate,"getdate=-=-==")
   // useEffect(() => {
   //   startTimer();
   //   // eslint-disable-next-line react-hooks/exhaustive-
@@ -185,7 +187,7 @@ function Stopwatch({ startCapture }) {
                   {formatTime(time)}
                 </Text>
                 <Text style={{ fontSize: '18px', marginBottom: '5px' }}>
-                  Today (fri UTC)
+                  {"Today (fri UTC)"}
                 </Text>
                 <Text
                   style={{
